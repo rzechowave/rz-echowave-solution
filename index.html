@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="RZ Echowave Solution — technology supply and IT solutions for organisations.">
+<title>RZ Echowave Solution | IT & Technology Solutions</title>
+<style>
+:root{--navy:#10213b;--blue:#1677d2;--cyan:#39c2ee;--ink:#18263a;--muted:#607087;--bg:#f5f8fc;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.6;background:var(--white)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#ffffffed;backdrop-filter:blur(10px);border-bottom:1px solid #e7edf5}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.03em;color:var(--navy)}
+.logo{width:43px;height:43px;border-radius:12px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--blue),var(--cyan));font-weight:900}
+.brand small{display:block;font-size:10px;letter-spacing:.23em;color:var(--muted);font-weight:700}
+nav{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:650}nav a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:10px;background:var(--blue);color:#fff;font-weight:750;border:1px solid var(--blue);transition:.2s}
+.btn:hover{transform:translateY(-1px);background:#0e62b2}.btn.outline{background:transparent;color:#fff;border-color:#ffffff80}.btn.light{background:#fff;color:var(--navy);border-color:#fff}
+.hero{background:radial-gradient(circle at 80% 15%,#244d7b 0,transparent 30%),linear-gradient(120deg,#0c1b31,#122c4d 68%,#0d456a);color:#fff;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:45px;align-items:center;padding:92px 0 100px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#75d9ff}
+h1{font-size:clamp(38px,5.4vw,65px);line-height:1.06;letter-spacing:-.045em;margin:17px 0 22px}
+.hero p{font-size:18px;color:#d4e0ee;max-width:590px;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+.visual{min-height:330px;position:relative;display:grid;place-items:center}
+.orbit{width:min(350px,90%);aspect-ratio:1;border:1px solid #77c9f866;border-radius:50%;display:grid;place-items:center;position:relative;background:radial-gradient(circle,#1a4875 0,#173454 48%,#10233d 70%);box-shadow:0 0 70px #31b7ef1c}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #7cccf655;border-radius:50%;inset:12%}.orbit:after{inset:25%}
+.core{z-index:1;width:112px;height:112px;border-radius:30px;background:linear-gradient(135deg,#2086e8,#39c2ee);display:grid;place-items:center;box-shadow:0 15px 50px #1596e877}
+.core svg{width:62px;height:62px}.float{position:absolute;z-index:2;background:#ffffff12;border:1px solid #ffffff2a;backdrop-filter:blur(8px);padding:12px 15px;border-radius:12px;font-size:13px;font-weight:700}.f1{top:15%;left:-2%}.f2{right:-2%;top:34%}.f3{bottom:12%;left:7%}
+section{padding:76px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}.kicker{font-size:12px;color:var(--blue);font-weight:850;letter-spacing:.15em;text-transform:uppercase}
+h2{font-size:clamp(28px,3.5vw,42px);line-height:1.15;letter-spacing:-.03em;color:var(--navy);margin:10px 0 14px}.section-head p,.intro p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid #e5ebf3;border-radius:17px;padding:26px;background:#fff;box-shadow:0 8px 30px #10213b06}
+.card:hover{border-color:#b6d8f8;box-shadow:0 14px 36px #10213b0c}
+.iconbox{width:48px;height:48px;border-radius:13px;background:#eaf5ff;color:var(--blue);display:grid;place-items:center;margin-bottom:20px}
+.iconbox svg{width:25px;height:25px}.card h3{color:var(--navy);margin:0 0 9px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+.about{background:var(--bg)}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:center}
+.about-panel{padding:32px;border-radius:22px;background:linear-gradient(145deg,#112642,#174b78);color:white;min-height:300px;display:flex;flex-direction:column;justify-content:space-between}
+.about-panel .big{font-size:42px;font-weight:850;line-height:1.1;letter-spacing:-.04em}.about-panel p{color:#d0e2f4}
+.checks{display:grid;gap:14px;margin-top:24px}.check{display:flex;gap:12px;align-items:flex-start}.tick{width:24px;height:24px;border-radius:50%;background:#dff5ff;color:#0876c8;display:grid;place-items:center;flex:none;font-weight:900}
+.check span:last-child{color:#52647b}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:22px;border-top:3px solid var(--blue);background:#f7faff;border-radius:0 0 14px 14px}.step b{font-size:12px;letter-spacing:.12em;color:var(--blue)}.step h3{margin:8px 0;color:var(--navy)}.step p{font-size:14px;color:var(--muted);margin:0}
+.contact{background:var(--navy);color:white}.contact h2{color:white}.contact .section-head p{color:#c2d0e2}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}
+.contact-info p{color:#c2d0e2}.contact-list{display:grid;gap:13px;margin-top:24px}.contact-item{padding:13px 15px;border:1px solid #ffffff24;border-radius:12px;color:#eaf3ff}
+form{display:grid;gap:13px;background:#fff;padding:24px;border-radius:18px;color:var(--ink)}
+label{font-size:13px;font-weight:750;color:var(--navy)}input,textarea,select{width:100%;margin-top:6px;border:1px solid #d8e1ec;border-radius:9px;padding:12px;font:inherit;background:#fbfdff;color:var(--ink)}textarea{min-height:105px;resize:vertical}form .btn{width:100%;cursor:pointer;font:inherit}
+.form-note{font-size:12px;color:#6a7a8e;margin:0}
+footer{background:#091629;color:#aebed1;padding:24px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){nav{gap:13px}nav a:not(.btn){display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{padding:65px 0 60px;gap:12px}.visual{min-height:290px}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.about-grid{gap:25px}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.nav{height:68px}.brand{font-size:13px}.nav>.btn{padding:10px 12px;font-size:12px}.hero p{font-size:16px}section{padding:58px 0}.float{font-size:11px}.f1{left:0}.f2{right:0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="logo">RZ</span><span>RZ ECHOWAVE<small>SOLUTION</small></span></a>
+<nav><a href="#services">Services</a><a href="#about">About Us</a><a href="#approach">Our Approach</a><a class="btn" href="#contact">Contact Us ↗</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow">Technology • Connectivity • Solutions</div>
+<h1>Technology that moves your business forward.</h1>
+<p>Practical IT solutions and technology supply to help organisations work smarter, stay connected and move with confidence.</p>
+<div class="actions"><a class="btn light" href="#services">Explore Our Services ↗</a><a class="btn outline" href="#contact">Discuss a Project</a></div>
+</div>
+<div class="visual" aria-hidden="true"><div class="orbit"><div class="core"><svg viewBox="0 0 64 64" fill="none"><path d="M12 24a28 28 0 0 1 40 0M20 32a17 17 0 0 1 24 0M28 40a6 6 0 0 1 8 0" stroke="white" stroke-width="4" stroke-linecap="round"/><circle cx="32" cy="49" r="3.5" fill="white"/></svg></div></div><div class="float f1">IT Supply</div><div class="float f2">Network Solutions</div><div class="float f3">Business Technology</div></div>
+</div></section>
+<section id="services"><div class="wrap"><div class="section-head"><div class="kicker">What We Do</div><h2>Solutions built around your needs</h2><p>Flexible technology support for organisations, from sourcing equipment to exploring practical infrastructure solutions.</p></div>
+<div class="cards">
+<article class="card"><div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 8h10"/></svg></div><h3>IT Equipment Supply</h3><p>Computers, laptops, printers, accessories and other technology equipment based on project requirements.</p></article>
+<article class="card"><div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.8 3.1-.2-.1a1.7 1.7 0 0 0-1.8.1l-.2.1h-3.6l-.1-.2a1.7 1.7 0 0 0-1.6-1l-.3.1-1.8-3.1.2-.2a1.7 1.7 0 0 0 .2-1.8l-.1-.3V9.9l.2-.1a1.7 1.7 0 0 0 .9-1.7l-.1-.3 3.1-1.8.2.2a1.7 1.7 0 0 0 1.8.2l.3-.1h3.6l.1.2a1.7 1.7 0 0 0 1.6.9l.3-.1 1.8 3.1-.2.2a1.7 1.7 0 0 0-.2 1.8l.1.3V15z" transform="translate(-2 -2) scale(1.08)"/></svg></div><h3>Network & Infrastructure</h3><p>Technology sourcing and solutions for connectivity, network infrastructure and organisational IT environments.</p></article>
+<article class="card"><div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 20 6v5c0 5-3.4 8.2-8 10-4.6-1.8-8-5-8-10V6l8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>IT Security Solutions</h3><p>Explore suitable security products and solutions to support protection of business systems and networks.</p></article>
+<article class="card"><div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v11H4zM8 20h8M12 16v4"/><path d="m8 10 2.5 2.5L16 7"/></svg></div><h3>Technical Support</h3><p>Assistance with technology requirements, product coordination and project-related technical needs.</p></article>
+<article class="card"><div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16v13H4zM8 7V4h8v3M8 12h8M8 16h5"/></svg></div><h3>Project Procurement</h3><p>Support for organisations seeking equipment options and quotations aligned with their project specifications.</p></article>
+<article class="card"><div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><h3>Solution Coordination</h3><p>Clear communication and coordination to help move technology requirements from enquiry to delivery.</p></article>
+</div></div></section>
+<section class="about" id="about"><div class="wrap about-grid">
+<div class="about-panel"><div><div class="eyebrow">RZ Echowave Solution</div><div class="big">A practical partner for your technology needs.</div></div><p>Focused on responsive communication, suitable solutions and dependable coordination.</p></div>
+<div class="intro"><div class="kicker">About Us</div><h2>Technology made more straightforward.</h2><p>RZ Echowave Solution aims to help organisations identify and source technology solutions that fit their operational needs. We value clear communication, practical recommendations and a professional approach to every enquiry.</p>
+<div class="checks"><div class="check"><span class="tick">✓</span><span><b>Needs-led recommendations</b><br>Solutions aligned with your requirements and project scope.</span></div><div class="check"><span class="tick">✓</span><span><b>Professional coordination</b><br>Clear communication throughout the enquiry process.</span></div><div class="check"><span class="tick">✓</span><span><b>Flexible sourcing</b><br>Options considered according to specification and availability.</span></div></div>
+</div></div></section>
+<section id="approach"><div class="wrap"><div class="section-head"><div class="kicker">Our Approach</div><h2>Simple from enquiry to solution</h2><p>A clear process helps us understand what you need and respond more effectively.</p></div>
+<div class="steps"><div class="step"><b>01 / DISCOVER</b><h3>Understand the need</h3><p>Share your requirements, specifications, quantity and target timeline.</p></div><div class="step"><b>02 / PROPOSE</b><h3>Review options</h3><p>We review suitable products or solutions and clarify the next steps.</p></div><div class="step"><b>03 / COORDINATE</b><h3>Move forward</h3><p>We coordinate the agreed scope, quotation and project communication.</p></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="section-head"><div class="kicker" style="color:#7bdcff">Let's Talk</div><h2>Have a project in mind?</h2><p>Tell us what your organisation needs. We’ll be happy to discuss the next steps.</p></div>
+<div class="contact-grid"><div class="contact-info"><h3>Contact RZ Echowave Solution</h3><p>For product enquiries, project quotations or technology requirements, send us a message using the form.</p><div class="contact-list"><div class="contact-item">✉️ &nbsp; [Add official company email]</div><div class="contact-item">☎️ &nbsp; [Add business phone / WhatsApp]</div><div class="contact-item">📍 &nbsp; [Add business address, if required]</div></div></div>
+<form id="enquiryForm"><label>Your name<input id="name" required placeholder="Full name"></label><label>Company / organisation<input id="company" placeholder="Company or organisation"></label><label>Email address<input id="email" type="email" required placeholder="you@company.com"></label><label>What do you need?<select id="topic"><option>IT equipment supply</option><option>Network / infrastructure</option><option>IT security</option><option>Technical support</option><option>Project quotation</option><option>Other enquiry</option></select></label><label>Project details<textarea id="details" required placeholder="Tell us about your requirements..."></textarea></label><button class="btn" type="submit">Prepare Email Enquiry ↗</button><p class="form-note">This demo form opens your email app. Add the company email address in the website code before publishing.</p></form>
+</div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> RZ Echowave Solution. All rights reserved.</span><span>Technology • Connectivity • Solutions</span></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('enquiryForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const recipient=''; // Add the official company email address before publishing.
+ if(!recipient){alert('Please add the official company email address to the website before using the enquiry form.');return;}
+ const subject=encodeURIComponent('Website enquiry - '+document.getElementById('topic').value);
+ const body=encodeURIComponent('Name: '+document.getElementById('name').value+'\\nCompany: '+document.getElementById('company').value+'\\nEmail: '+document.getElementById('email').value+'\\nEnquiry type: '+document.getElementById('topic').value+'\\n\\nDetails:\\n'+document.getElementById('details').value);
+ window.location.href='mailto:'+recipient+'?subject='+subject+'&body='+body;
+});
+</script>
+</body></html>
